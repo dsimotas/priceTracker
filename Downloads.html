@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pTblack.png" alt="priceTracker Logo" class="logo-image">
+      <span>priceTracker</span>
+    </div>
+  </header>
+  <aside>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Downloads.html">Downloads</a></li>
+    </ul>
+  </aside>
+  <main>
+    <section class="content">
+      <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+          <tr>
+            <th>Version</th>
+            <th>Release Date</th>
+            <th>Download Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.0</td>
+            <td>2025-01-18</td>
+            <td><a href="https://github.com/dsimotas/priceTracker/raw/refs/heads/main/Versions/Version%201.0/priceTracker.app.zip">Download</a></td>
+          </tr>
+          <tr>
+            <td>1.1</td>
+            <td>2025-01-19</td>
+            <td><a href="https://github.com/dsimotas/priceTracker/raw/refs/heads/main/Versions/Version%201.1/priceTracker.app.zip">Download</a></td>
+          </tr>
+          <tr>
+            <td>1.2</td>
+            <td>2025-01-29</td>
+            <td><a href="https://github.com/dsimotas/priceTracker/raw/refs/heads/main/Versions/Version%201.2/priceTracker.app.zip">Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <h2>Releases</h2>
+    <h3>Version 1.0</h3>
+    <p>Resolved issue with Application needing to be closed and re-opened when computer goes to sleep, or network connection is lost for a long period of time.</p>
+    <h3>Version 1.1</h3>
+    <p>Added functionality to increase cryptocurrency coins to fetch from 50. You can now update the Config.json file to configure the change. This will allow for more coins to be searchable.<br>
+    1. Right click application -> Show Package Contents<br>
+    2. Expand Resources folder<br>
+    3. Locate and Open Config.Json file with a text editor<br>
+    4. Change the value of "numberOfCoinsToFetch" to the intended value.</p><br>
+    Please note: Changing this value above 450 may result in you having to wait a minute for the crypto ticker price to propagate to abide rate-limits set in place by CoinGecko
+    <h3>Version 1.2</h3>
+    <p>Added support for Futures Ticker tracking and implemented functionality to allow for post-market-close data updating for stock tickers<br>
+    Tracking futures prices around the clock is as easy as tracking stock tickers now.<br><br>
+    Example of tracking NQ Futures along with other stocks/crypto: <br><br>
+    <strong>BTC:SPY:NQ=F:AAPL</strong></p>
+  </main>
+</body>
+</html>
